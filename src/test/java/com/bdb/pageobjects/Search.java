@@ -75,7 +75,7 @@ public class Search {
     /**
      *  Common method to verify that an item was added to the basket successfully.
      */
-    public void isAddedToCart() {
-        assert wait.until(ExpectedConditions.visibilityOfElementLocated(addedToBasket)).isDisplayed();
+    public boolean isAddedToCart() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(addedToBasket)).isDisplayed();
     }
 }

@@ -44,7 +44,7 @@ public class AmazonLocal {
         searchObject.declineExtraCoverage();
 
         // Verify that the item added to the cart successfully.
-        searchObject.isAddedToCart();
+        assert searchObject.isAddedToCart();
 
         // Close out the web driver at the end.
         driver.quit();
